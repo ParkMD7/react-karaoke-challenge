@@ -27,6 +27,7 @@ class Lyrics extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
+    //debugger
     if (props.lyrics !== state.lyrics) {
       return {
         ...state,

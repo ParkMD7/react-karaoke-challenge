@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Song = () => {
+const Song = (props) => {
   return (
     <tr className="song">
-      <td>title</td>
-      <td>singer</td>
-      <td><button>Play</button></td>
+      <td>{props.songData.title}</td>
+      <td>{props.songData.singer}</td>
+      <td><button onClick={()=>props.handlePlaySong(props.songData.id)}>Play</button></td>
     </tr>
   )
 }
